@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+  </head>
+  <body>
+      <div class="header">
+        <img src="https://img.icons8.com/material-rounded/48/000000/menu--v1.png"/ alt="hamburger" class="hamburger">
+          <nav class="header-nav">
+              <ul class="header-list">
+                  <li class="header-cell">
+                      <a href="#personal">Личная информация</a>
+                  </li>
+                  <li class="header-cell">
+                      <a href="#experience">Опыт</a>
+                  </li>
+                  <li class="header-cell">
+                      <a href="#javascript">JavaScript</a>
+                  </li>
+                  <li class="header-cell">
+                      <a href="#about-myself">О себе</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="main">
+          <h1 class="title">
+              Анкета
+          </h1>
+          <div class="personal" id="personal">
+              <div class="icon">
+                  <img src="img/pers.png" alt="personal">
+              </div>
+              <div class="personal-title">
+                  <h2>Личная информация</h2>
+              </div>
+              <div class="personal-inputs">
+                  <div class="box-input">
+                      <input type="text" class="personal-input" required id="name" placeholder="ФИО" value="Кузнецов Станислав Алексеевич">
+                      <label for="#name">ФИО</label>
+                  </div>
+
+                  <div class="box-input list">
+                      <div class="date-main" name="sel" id="select">
+                          <p class="date-text">Год рождения(1996)</p>
+                      </div>
+                      <div class="date-list">
+
+                      </div>
+                      <label for="#select"><img src="img/arrow.png" alt="arrow"></label>
+                  </div>
+                  
+                  <div class="box-input">
+                      <input type="text" class="personal-input" id="place" placeholder="Место проживания" value="г. Омск">
+                      <label for="#place">Место проживания</label>
+                  </div>
+
+                  <div class="box-input">
+                      <input type="text" class="personal-input" id="skype" placeholder="Skype" value="kuzya764">
+                     <label for="#skype">Skype</label>
+                  </div>
+
+                  <div class="box-input">
+                      <input type="email" class="personal-input" id="mail" placeholder="E-mail" value="staskuzya1996@mail.ru">
+                      <label for="#mail">E-mail</label>
+                  </div>                 
+              </div>
+          </div>
+          <div class="experience" id="experience">
+              <div class="icon">
+                  <img src="img/exp.png" alt="experience">
+              </div>
+              <h2>Расскажите о своем опыте</h2>
+              <div class="input-checkbox">
+                  <div class="input-checkbox__column">
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox" checked>
+                          БЭМ/OOCSS
+                          <label for="#checkbox"></label>
+                      </div>
+                      
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox" checked>
+                          Stylus/LESS/SASS
+                          <label for="#radio"></label>
+                      </div>
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox">
+                          Работаю с SVG
+                          <label for="#checkbox"></label>
+                      </div>
+   
+                  </div>
+
+                  <div class="input-checkbox__column">
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox" checked>
+                          Верстаю семантично
+                          <label for="#checkbox"></label>
+                      </div>
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox">
+                          ES2015/ES2016
+                          <label for="#checkbox"></label>
+                      </div>
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox">
+                          Gulp/GRUNT
+                          <label for="#checkbox"></label>
+                      </div>
+
+                  </div>
+
+                  <div class="input-checkbox__column">
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox">
+                          Webpack
+                          <label for="#checkbox"></label>
+                      </div>
+
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox" checked>
+                          jQuery
+                          <label for="#checkbox"></label>
+                      </div>
+                      
+                      <div class="box-input">
+                          <input type="checkbox" id="checkbox">
+                          Ипользую Git
+                          <label for="#checkbox"></label>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="js" id="javascript">
+              <div class="icon">
+                  <img src="img/js.png" alt="js">
+              </div>
+              <h2>Уровень владения JavaScript</h2>
+              <div class="js-row">
+                  <div class="js-colum begin">
+                      <div class="js-colum__text">
+                          <p class="level">Не владею</p>
+                      </div>
+                      <div class="js-colum__gradient bit">
+
+                      </div>
+                  </div>
+
+                  <div class="js-colum middle">
+                      <div class="js-colum__text">
+                          <p class="level">Использую готовые <br> решения</p>
+                      </div>
+                      <div class="js-colum__gradient medium">
+                        
+                      </div>
+                  </div>
+
+                  <div class="js-colum senior">
+                      <div class="js-colum__text">
+                          <p class="level">Использую готовые решения <br> и умею и переделывать</p>
+                          <p class="level">Пишу сложный JS с нуля</p>
+                        </div>
+                      <div class="js-colum__gradient lot">
+                       
+                      </div>
+                  </div>
+              </div>
+              <div class="js-line">
+                  <img src="img/RoundedRectangle.png" alt="marker" draggable="false">
+              </div>
+          </div>
+          <div class="about" id="about-myself">
+              <div class="icon">
+                  <img src="img/about.png" alt="about">
+              </div>
+              <h2>Расскажите о себе</h2>
+              <p>Напишите несколько предложений, чем привлекла наша вакансия <br> и что вы ожидаете от работы у нас.</p>
+              <div class="message">
+                  <textarea name="t" id="t" cols="66" rows="9" placeholder="Понравилась тем, что...">
+Привлекла условием труда и возможностью развиваться в web направлении. Ожидаю участие в интересных проектах и получение опыта в верстке.
+                  </textarea>
+              </div>
+              <button class="button">
+                  <a href="#">
+                      Готово
+                  </a>
+              </button>
+          </div>
+
+      </div>
+      <!-- <input type="text" id="city" placeholder="City"> -->
+      <!-- <label for="#city" class="pop">City</label> -->
+  </body>
+</html>
